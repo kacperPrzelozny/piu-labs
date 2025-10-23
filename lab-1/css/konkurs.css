@@ -1,0 +1,199 @@
+main {
+    /*padding: 1rem;*/
+}
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+.registration-form h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.registration-form .subtitle {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.registration-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.registration-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.registration-form-group input,
+.registration-form-group select {
+    width: 100%;
+    padding: 0.75rem 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background: white;
+}
+
+.registration-form-group input:focus,
+.registration-form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+input[type="color"] {
+    height: 50px;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+fieldset {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    font-size: 16px;
+}
+
+.radio-group {
+    margin-top: 0.5rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.radio-option:last-child {
+    margin-bottom: 0;
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-option label {
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.theme-checkbox {
+    display: none;
+}
+
+.registration-form {
+    position: relative;
+}
+
+.theme-toggle-corner {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-corner:hover {
+    transform: scale(1.1);
+}
+
+#theme-toggle:checked ~ .registration-form {
+    background: #2d2d2d;
+    color: #fff;
+}
+
+#theme-toggle:checked ~ .registration-form h1,
+#theme-toggle:checked ~ .registration-form .subtitle {
+    color: #fff;
+}
+
+#theme-toggle:checked ~ .registration-form .registration-form-group input,
+#theme-toggle:checked ~ .registration-form .registration-form-group select,
+#theme-toggle:checked ~ .registration-form fieldset {
+    background: #3d3d3d;
+    border-color: #555;
+    color: #fff;
+}
+
+#theme-toggle:checked ~ .registration-form fieldset legend,
+#theme-toggle:checked ~ .registration-form .registration-form-group label {
+    color: #fff;
+}
+
+#theme-toggle:checked ~ .registration-form .theme-toggle-corner {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+button:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+label:hover,
+.theme-toggle-corner:hover,
+input[type="color"]:hover {
+    cursor: pointer;
+}

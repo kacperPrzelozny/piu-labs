@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kacper Przełożny</title>
+  <link rel="stylesheet" href="css/konkurs.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<header>
+  <h1>Kacper Przełożny</h1>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Strona główna</a></li>
+      <li><a href="./login.html">Logowanie</a></li>
+      <li><a href="./uwagi.html">Uwagi</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+  <form class="registration-form" action="https://httpbin.org/get" method="get">
+    <label for="theme-toggle" class="theme-toggle-corner" title="Change theme">🌗</label>
+
+    <h1>Zgłoszenie<br><span class="subtitle">do Konkursu Plastycznego</span></h1>
+    <div class="registration-form-group">
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" maxlength="30" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="surname">Nazwisko:</label>
+      <input type="text" id="surname" name="surname" maxlength="50" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="city">Miasto:</label>
+      <input list="cities" id="city" name="city" placeholder="Wpisz lub wybierz" required>
+      <datalist id="cities">
+        <option value="Warszawa">
+        <option value="Kraków">
+        <option value="Wrocław">
+        <option value="Poznań">
+        <option value="Gdańsk">
+      </datalist>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="date-of-birth">Data urodzenia:</label>
+      <input type="date" id="date-of-birth" name="date-of-birth" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="pieces-count">Liczba zgłaszanych prac (od 1 do 6):</label>
+      <input type="number" id="pieces-count" name="pieces-count" min="1" max="6" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="colour">Kolor wiodący prac:</label>
+      <input type="color" id="colour" name="colour" value="#000000" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="category">Kategoria pracy:</label>
+      <select id="category" name="category" required>
+        <option value="">-- wybierz kategorię --</option>
+        <option value="drawing">Rysunek</option>
+        <option value="painting">Malarstwo</option>
+        <option value="graphics">Grafika</option>
+        <option value="photography">Fotografia</option>
+      </select>
+    </div>
+
+    <fieldset class="registration-form-group">
+      <legend>Publikacja pracy online:</legend>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="publish-true" name="publish" value="1" required>
+          <label for="publish-true">Tak</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="publish-false" name="publish" value="0">
+          <label for="publish-false">Nie</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="registration-form-group checkbox-group">
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">Zgadzam się na regulamin konkursu</label>
+    </div>
+
+    <button type="submit">Wyślij zgłoszenie</button>
+  </form>
+</main>
+</body>
+
+</html>

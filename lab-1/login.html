@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kacper Przełożny</title>
+    <link rel="stylesheet" href="css/konkurs.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <h1>Kacper Przełożny</h1>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Strona główna</a></li>
+      <li><a href="./uwagi.html">Uwagi</a></li>
+      <li><a href="./konkurs.html">Konkurs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form class="registration-form" action="https://httpbin.org/post" method="post">
+
+    <h1>Formularz logowania</h1>
+
+    <div class="registration-form-group">
+      <label for="login">Hasło:</label>
+      <input type="text" id="login" name="login" required>
+    </div>
+
+    <div class="registration-form-group">
+      <label for="password">Hasło:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <button type="submit">Zaloguj</button>
+  </form>
+</main>
+</body>
+</html>
